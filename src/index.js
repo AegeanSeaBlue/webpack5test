@@ -1,13 +1,5 @@
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDom from 'react-dom';
+import AppRouter from './router/index'
 
-const App = () => {
-  return (
-    <div>
-      <h3>webpack5.0</h3>
-      hellos1232
-    </div>
-  );
-};
-
-render(<App/>, document.getElementById('root'));
+ReactDom.render(<AppRouter/>, document.getElementById('root'));
