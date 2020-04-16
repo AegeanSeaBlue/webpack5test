@@ -1,10 +1,9 @@
 import React from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from '../pages/Home/Home';
 
 export default () => {
   return (
-
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
