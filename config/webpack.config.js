@@ -1,7 +1,6 @@
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const dist = path.join(__dirname, '../dist');
 module.exports = {
   mode: 'development',
@@ -14,7 +13,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../src')
+      '@': path.resolve(__dirname, '../src'),
     },
     extensions: ['.js', '.jsx']
   },
@@ -23,7 +22,7 @@ module.exports = {
     compress: true,
     open: true,
     contentBase: dist,
-    noInfo: true,
+    noInfo: false,
     historyApiFallback: true
   },
   module: {
@@ -38,17 +37,32 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css|less)$/,
-        exclude: /node_modules/,
+        test: /\.less/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: 'style-loader'
           },
           {
             loader: 'css-loader'
           },
           {
-            loader: 'less-loader'
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true
+            }
+          },
+
+        ]
+      },
+      {
+        test: /\.css$/,
+        //exclude: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
           }
         ]
       }
@@ -60,9 +74,5 @@ module.exports = {
       filename: 'index.html',
       template: path.join(__dirname, '../public/index.html')
     }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    })
   ]
 };

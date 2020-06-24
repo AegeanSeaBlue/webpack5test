@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const dist = path.join(__dirname, '../dist');
 const {ANA} = process.env;
-
+//const UselessFile = require('useless-files-webpack-plugin');
 let getPlugins = () => {
   let plugins = [
     new CleanWebpackPlugin(),
@@ -16,12 +16,20 @@ let getPlugins = () => {
     }),
     new MiniCssExtractPlugin({
       filename: '[name][chunkhash].css',
-      chunkFilename: '[id].css'
+      chunkFilename: '[id][chunkhash].css'
     }),
     new OptimizeCssAssetsPlugin()
   ];
   if (ANA) {
     plugins.push(new BundleAnalyzerPlugin({openAnalyzer: false}));
+    /*plugins.push(new UselessFile(
+      {
+        root: '../src', // 项目目录
+        out: './fileList.json', // 输出文件列表
+        clean: false,// 删除文件,
+        //exclude: ['../public'] // 排除文件列表, 格式为文件路径数组
+      }
+    ));*/
   }
   return plugins;
 };
@@ -36,12 +44,15 @@ module.exports = {
     filename: '[name].[chunkhash].js'
   },
   resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '../src')
+    },
     extensions: ['.js', '.jsx']
   },
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM',
-    //'react-router-dom': 'ReactRouter',
+    //'react-router-dom': 'ReactRouterDom',
   },
   module: {
     rules: [
@@ -55,8 +66,8 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css|less)$/,
-        exclude: /node_modules/,
+        test: /\.css$/,
+        //exclude: /node_modules/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
@@ -68,7 +79,24 @@ module.exports = {
             loader: 'less-loader'
           }
         ]
-      }
+      },
+      {
+        test: /\.less/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true
+            }
+          }
+        ]
+      },
     ]
   },
   optimization: {
@@ -84,6 +112,24 @@ module.exports = {
           test: /[\\/]node_modules[\\/]/,
           reuseExistingChunk: true
         },
+        antd: {
+          name: 'antd',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](antd|@ant-design|rc-.*)/
+        },
+        rxjs: {
+          name: 'rxjs',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](rxjs)/
+        },
+        other: {
+          name: 'other',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](tinycolor|dom-align|lodash)/
+        }
       }
     }
   },
