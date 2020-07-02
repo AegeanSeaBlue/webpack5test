@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './Home.css';
-import './index.less';
+import styles from './index.less';
 import {Table} from 'antd';
 /*
 const columns = [
@@ -387,15 +387,22 @@ class CTable extends React.Component {
 
 
 class Home extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    import('@/env.json').then(res => {
+      console.log(res);
+    });
+  }
+
   render() {
     return (
       <>
-        <h2 className='font'>
-          <Link to='/'>Webpack5</Link>
+        <h2>
+          <Link to='/'><span className={styles.font}>Webpack5</span></Link>
         </h2>
         <h3 className='home' style={{fontSize: 26}}>Home</h3>
         <h4>
-          <Link to='/about' onClick={() => {
+          <Link to='/about?a=1' onClick={() => {
             //console.log('to about', this.props);
           }}>To About</Link>
         </h4>

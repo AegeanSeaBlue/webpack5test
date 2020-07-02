@@ -5,11 +5,12 @@ const dist = path.join(__dirname, '../dist');
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    //about: './src/about.js'
   },
   output: {
     path: dist,
-    filename: 'bundle.js'
+    //filename: 'bundle.js'
   },
   resolve: {
     alias: {
@@ -37,42 +38,59 @@ module.exports = {
         ]
       },
       {
-        test: /\.less/,
+        test: /\.(css|less)$/,
         use: [
           {
             loader: 'style-loader'
           },
           {
-            loader: 'css-loader'
+            loader: 'css-loader',
+            options: {
+              modules: {
+                getLocalIdent: (context, localIdentName, localName) => {
+                  return context.resourcePath + localName;
+                },
+              },
+            }
           },
           {
             loader: 'less-loader',
-            options: {
-              javascriptEnabled: true
-            }
           },
 
         ]
       },
-      {
-        test: /\.css$/,
-        //exclude: /node_modules/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
-      }
+      /*
+            {
+              test: /\.css$/,
+              //exclude: /node_modules/,
+              use: [
+                {
+                  loader: 'style-loader'
+                },
+                {
+                  loader: 'css-loader',
+                  options: {
+                    modules: {
+                      localIdentName: '[path][name][local]–[hash:base64:5]'
+                    }
+                  }
+                }
+              ]
+            }
+      */
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
     new htmlWebpackPlugin({
       filename: 'index.html',
-      template: path.join(__dirname, '../public/index.html')
+      template: path.join(__dirname, '../public/index.html'),
+      chunks: ['index']
     }),
+    /*new htmlWebpackPlugin({
+      filename: 'about.html',
+      template: path.join(__dirname, '../public/about.html'),
+      chunks: ['about']
+    }),*/
   ]
 };

@@ -4,18 +4,31 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const dist = path.join(__dirname, '../dist');
-const {ANA} = process.env;
 //const UselessFile = require('useless-files-webpack-plugin');
+let dist = path.join(__dirname, '../dist');
+const {ANA} = process.env;
+const {EDITION} = require('../src/env.json');
+
+if (EDITION) {
+  dist = path.join(__dirname, '../distAna');
+}
+
+
 let getPlugins = () => {
   let plugins = [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({dry: true}),
     new htmlWebpackPlugin({
       filename: 'index.html',
-      template: path.join(__dirname, '../public/prod.html')
+      template: path.join(__dirname, '../public/prod.html'),
+      chunks: ['index']
     }),
+    /*new htmlWebpackPlugin({
+      filename: 'aboutprod.html',
+      template: path.join(__dirname, '../public/aboutprod.html'),
+      chunks: ['about']
+    }),*/
     new MiniCssExtractPlugin({
-      filename: '[name][chunkhash].css',
+      filename: '[name][hash].css',
       chunkFilename: '[id][chunkhash].css'
     }),
     new OptimizeCssAssetsPlugin()
@@ -33,15 +46,16 @@ let getPlugins = () => {
   }
   return plugins;
 };
-
 module.exports = {
   mode: 'production',
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    //about: './src/about.js'
   },
   output: {
     path: dist,
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[hash].js',
+    chunkFilename: '[name].[chunkhash].js'
   },
   resolve: {
     alias: {
@@ -91,9 +105,9 @@ module.exports = {
           },
           {
             loader: 'less-loader',
-            options: {
+            /*options: {
               javascriptEnabled: true
-            }
+            }*/
           }
         ]
       },
