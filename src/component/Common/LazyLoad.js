@@ -1,15 +1,12 @@
 import React from 'react';
-import {Spin} from 'antd';
 import {useLocation, useParams} from 'react-router-dom';
+import {createBrowserHistory} from 'history';
+import {Loading} from './Loading';
 
 const Content = ({Wrap, props}) => {
-  let nav = [useLocation(), useParams()];
+  let nav = [useLocation(), useParams(), createBrowserHistory()];
   console.log(nav);
-  return Wrap ? <Wrap {...props}/> : <Spin spinning={true} size='large'>
-    <div style={{height: 100}}>
-      &nbsp;
-    </div>
-  </Spin>;
+  return Wrap ? <Wrap {...props}/> : <Loading/>;
 };
 
 

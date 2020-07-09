@@ -18,6 +18,7 @@ module.exports = {
     },
     extensions: ['.js', '.jsx']
   },
+  devtool: 'inline-source-map',
   devServer: {
     hot: true,
     compress: true,
@@ -45,13 +46,13 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-            options: {
+            /*options: {
               modules: {
                 getLocalIdent: (context, localIdentName, localName) => {
                   return context.resourcePath + localName;
                 },
               },
-            }
+            }*/
           },
           {
             loader: 'less-loader',

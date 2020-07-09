@@ -7,11 +7,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 //const UselessFile = require('useless-files-webpack-plugin');
 let dist = path.join(__dirname, '../dist');
 const {ANA} = process.env;
-const {EDITION} = require('../src/env.json');
-
-if (EDITION) {
-  dist = path.join(__dirname, '../distAna');
-}
 
 
 let getPlugins = () => {
@@ -104,10 +99,7 @@ module.exports = {
             loader: 'css-loader'
           },
           {
-            loader: 'less-loader',
-            /*options: {
-              javascriptEnabled: true
-            }*/
+            loader: 'less-loader'
           }
         ]
       },

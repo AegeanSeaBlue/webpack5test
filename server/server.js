@@ -18,5 +18,5 @@ app.get('*', (req, res) => {
 
 
 app.listen(4002, () => {
-  console.info('localhost:4002');
+  console.info('http://localhost:4002');
 });

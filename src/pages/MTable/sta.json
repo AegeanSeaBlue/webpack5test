@@ -1,0 +1,1474 @@
+{
+  "resultList": [
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 4414.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 7792.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 1721.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 968.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 1838.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 1248.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 3252.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 3223.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 6029.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 343.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 1245.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 7975.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 1444.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 1245.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 501.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 3624.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 4573.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 1205.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 456.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 14845.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 1392.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 6040.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 8413.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 1516.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 4051.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 6490.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 1719.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 180.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 2328.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 2980.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 287.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 3132.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 7331.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 3137.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 445.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 1641.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 673.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 3750.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 3044.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 1892.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 1694.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 96.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 479.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 4263.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 906.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 678.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 141.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 1585.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 2099.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 2657.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 466.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 95.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 3497.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 1945.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 104.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 551.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 282.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 569.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 623.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 751.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 210.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 713.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 2444.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 88.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 694.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 1770.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 1517.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 1236.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 1099.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 451.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 3223.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 1145.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 197.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 532.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 1599.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 461.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 466.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 904.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 659.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 613.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 799.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 291.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 249.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 155.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 1385.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 1501.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 516.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 179.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 1134.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 1470.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 777.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 197.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 1296.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 419.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 302.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 63.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 500.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 153.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 844.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 608.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 552.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 492.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 754.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 376.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 338.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 2451.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 40.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 1019.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 520.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 595.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 1529.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 151.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 867.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 175.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 218.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 185.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 188.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 450.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 240.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 202.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 396.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 191.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 1448.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 141.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 1483.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 262.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 475.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 1055.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 816.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 158.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 261.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 1159.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 637.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 432.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 910.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 157.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 651.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 566.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 191.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 328.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 312.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 129.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 472.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 225.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 505.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 563.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 186.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 498.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 73.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 207.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 54.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 337.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 308.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 135.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 229.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 180.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 81.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 588.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 271.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 265.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 192.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 159.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 134.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 543.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华南",
+      "OrderQuantity": 331.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 204.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 162.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 88.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华东",
+      "OrderQuantity": 292.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 93.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 380.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 134.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 138.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 33.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华东",
+      "OrderQuantity": 165.0
+    },
+    {
+      "ModeofTransportation": "火车",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 135.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 5.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 77.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 118.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "东北",
+      "OrderQuantity": 32.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 70.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 182.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "东北",
+      "OrderQuantity": 125.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 215.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华北",
+      "OrderQuantity": 71.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 31.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 204.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 57.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 32.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "华北",
+      "OrderQuantity": 168.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 37.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "家具产品",
+      "Region": "华南",
+      "OrderQuantity": 273.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 10.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 17.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "西北",
+      "OrderQuantity": 20.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 90.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "中级",
+      "ProductCategory": "家具产品",
+      "Region": "西南",
+      "OrderQuantity": 4.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 56.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 9.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华南",
+      "OrderQuantity": 105.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "家具产品",
+      "Region": "华北",
+      "OrderQuantity": 82.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "低级",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 65.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 35.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "东北",
+      "OrderQuantity": 57.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "技术产品",
+      "Region": "西南",
+      "OrderQuantity": 5.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "高级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 23.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "技术产品",
+      "Region": "西北",
+      "OrderQuantity": 1.0
+    },
+    {
+      "ModeofTransportation": "空运",
+      "OrderLevel": "低级",
+      "ProductCategory": "家具产品",
+      "Region": "西北",
+      "OrderQuantity": 6.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "中级",
+      "ProductCategory": "办公用品",
+      "Region": "西南",
+      "OrderQuantity": 11.0
+    },
+    {
+      "ModeofTransportation": "大卡",
+      "OrderLevel": "其它",
+      "ProductCategory": "办公用品",
+      "Region": "华东",
+      "OrderQuantity": 44.0
+    }
+  ]
+}
