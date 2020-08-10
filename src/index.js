@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import AppRouter from '@/router/index';
-import {Loading} from './component/Common/Loading';
+import {ConfigProvider} from 'antd';
+import ZHCN from 'antd/lib/locale/zh_CN';
 
-ReactDom.render(<AppRouter/>, document.getElementById('root'));
+ReactDom.render((
+  <ConfigProvider locale={ZHCN}>
+    <AppRouter/>
+  </ConfigProvider>
+), document.getElementById('root'));
 
 
-/*setTimeout(() => {
+setTimeout(() => {
   ReactDom.render(<AppRouter/>, document.getElementById('root'));
-}, 3000);*/
+}, 3000);
 

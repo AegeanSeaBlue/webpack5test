@@ -21,21 +21,23 @@
       }
     ],
     [
-      "transform-runtime",
-      {
-        "helpers": false,
-        "polyfill": false,
-        "regenerator": true,
-        "moduleName": "babel-runtime"
-      }
+      "@babel/plugin-transform-runtime"
+    ],
+    [
+      "@babel/plugin-transform-arrow-functions"
     ]
   ],
   "presets": [
     [
-      "@babel/preset-env"
+      "@babel/preset-env",
+      {
+        "targets": {
+          "ie": "10"
+        }
+      }
     ],
     [
-      "@babel/preset-react"
+      "@babel/react"
     ]
   ]
 }

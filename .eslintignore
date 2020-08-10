@@ -1,0 +1,11 @@
+/config
+/node_modules
+/public
+/scripts
+/server
+/.temp
+/docker
+/dist
+/src/assets
+**.d.ts
+*.md

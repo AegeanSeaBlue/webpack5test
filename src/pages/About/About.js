@@ -1,11 +1,11 @@
 import React from 'react';
 import './About.css';
 import './index.less';
-import {Tooltip, Popover} from 'antd';
-import {Observable, Operator, Observer} from 'rxjs';
+import {Observable} from 'rxjs';
 import {Link} from 'react-router-dom';
 import {Store} from './Store';
 import {inject, observer, Provider} from 'mobx-react';
+import ChartSection from './Chart';
 
 const request = () => {
   let observable = new Observable(
@@ -20,11 +20,6 @@ const request = () => {
   console.log('ob', observable);
   return observable.toPromise();
 };
-let dim = ['OrderLevel'];
-let col = ['ModeofTransportation', 'ProductCategory'];
-let val = ['OrderQuantity'];
-let valObj = {};
-
 
 const Count = inject('store')(observer(({store}) => <span>{store.count}</span>));
 
@@ -46,6 +41,9 @@ class About extends React.Component {
         <h3 className='home' style={{fontSize: 26}}>About
           <Count/>
         </h3>
+        <div style={{width: 1000, height: 600}}>
+          <ChartSection/>
+        </div>
       </Provider>
     );
   }

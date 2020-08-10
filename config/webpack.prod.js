@@ -5,13 +5,15 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 //const UselessFile = require('useless-files-webpack-plugin');
+//const PurifyCSSPlugin = require('purifycss-webpack');
+//const glob = require('glob');
 let dist = path.join(__dirname, '../dist');
 const {ANA} = process.env;
 
 
 let getPlugins = () => {
   let plugins = [
-    new CleanWebpackPlugin({dry: true}),
+    new CleanWebpackPlugin(),
     new htmlWebpackPlugin({
       filename: 'index.html',
       template: path.join(__dirname, '../public/prod.html'),
@@ -27,9 +29,13 @@ let getPlugins = () => {
       chunkFilename: '[id][chunkhash].css'
     }),
     new OptimizeCssAssetsPlugin()
+    /*new PurifyCSSPlugin({
+      paths: glob.sync(path.join(__dirname, '../public/prod.html'))
+    })*/
+
   ];
   if (ANA) {
-    plugins.push(new BundleAnalyzerPlugin({openAnalyzer: false}));
+    plugins.push(new BundleAnalyzerPlugin({openAnalyzer: true}));
     /*plugins.push(new UselessFile(
       {
         root: '../src', // 项目目录
@@ -44,7 +50,7 @@ let getPlugins = () => {
 module.exports = {
   mode: 'production',
   entry: {
-    index: './src/index.js',
+    index: './src/index.js'
     //about: './src/about.js'
   },
   output: {
@@ -60,7 +66,7 @@ module.exports = {
   },
   externals: {
     'react': 'React',
-    'react-dom': 'ReactDOM',
+    'react-dom': 'ReactDOM'
     //'react-router-dom': 'ReactRouterDom',
   },
   module: {
@@ -102,11 +108,13 @@ module.exports = {
             loader: 'less-loader'
           }
         ]
-      },
+      }
     ]
   },
   optimization: {
-    runtimeChunk: false,
+    //concatenateModules: true,//!ANA,
+    runtimeChunk: {name: entrypoint => 'runtime_' + entrypoint.name},
+    sideEffects: true,
     splitChunks: {
       chunks: 'all',
       name: 'vendors',
@@ -129,6 +137,18 @@ module.exports = {
           chunks: 'all',
           priority: 13,
           test: /[\\/]node_modules[\\/](rxjs)/
+        },
+        antv: {
+          name: 'antv',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](@antv|gl-matrix|tslib|detect-browser)/
+        },
+        mobx: {
+          name: 'mobx',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](mobx|mob-react)/
         },
         other: {
           name: 'other',

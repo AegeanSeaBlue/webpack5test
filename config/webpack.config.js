@@ -5,16 +5,16 @@ const dist = path.join(__dirname, '../dist');
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js',
+    index: './src/index.js'
     //about: './src/about.js'
   },
   output: {
-    path: dist,
+    path: dist
     //filename: 'bundle.js'
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../src'),
+      '@': path.resolve(__dirname, '../src')
     },
     extensions: ['.js', '.jsx']
   },
@@ -22,7 +22,7 @@ module.exports = {
   devServer: {
     hot: true,
     compress: true,
-    open: true,
+    open: false,
     contentBase: dist,
     noInfo: false,
     historyApiFallback: true
@@ -34,7 +34,16 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader'
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                ['@babel/preset-env', {
+                  targets: {
+                    ie: '10'
+                  }
+                }]
+              ]
+            }
           }
         ]
       },
@@ -45,7 +54,7 @@ module.exports = {
             loader: 'style-loader'
           },
           {
-            loader: 'css-loader',
+            loader: 'css-loader'
             /*options: {
               modules: {
                 getLocalIdent: (context, localIdentName, localName) => {
@@ -55,11 +64,11 @@ module.exports = {
             }*/
           },
           {
-            loader: 'less-loader',
-          },
+            loader: 'less-loader'
+          }
 
         ]
-      },
+      }
       /*
             {
               test: /\.css$/,
@@ -87,7 +96,7 @@ module.exports = {
       filename: 'index.html',
       template: path.join(__dirname, '../public/index.html'),
       chunks: ['index']
-    }),
+    })
     /*new htmlWebpackPlugin({
       filename: 'about.html',
       template: path.join(__dirname, '../public/about.html'),

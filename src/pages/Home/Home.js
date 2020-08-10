@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './Home.css';
 import styles from './index.less';
-import {Table} from 'antd';
+import {Table, DatePicker} from 'antd';
 
 class Home extends React.Component {
   render() {
@@ -12,6 +12,9 @@ class Home extends React.Component {
           <Link to='/'><span className={styles.font}>Webpack5</span></Link>
         </h2>
         <h3 className='home' style={{fontSize: 26}}>Home</h3>
+        <div>
+          <DatePicker.RangePicker/>
+        </div>
         <h4>
           <Link to='/about?a=1' onClick={() => {
             //console.log('to about', this.props);
@@ -24,7 +27,7 @@ class Home extends React.Component {
         </h4>
 
         <Table
-          pagination={false}
+          pagination={true}
           columns={[
             {
               title: 'A',
@@ -52,10 +55,13 @@ class Home extends React.Component {
             },
             {
               title: 'V',
+              dataIndex: 'category',
               children: [
                 {
                   title: 'V1',
-                  render: () => {
+                  dataIndex: 'B',
+                  render: (text, record) => {
+                    console.log('B', text, record);
                     return {
                       children: Date.now(),
                       props: {
@@ -82,7 +88,7 @@ class Home extends React.Component {
           ]}
           dataSource={[
             {
-              category: [{A: 1}, {B: 2}],
+              category: [{A: {}}, {B: 2}],
               value: []
             },
             {}

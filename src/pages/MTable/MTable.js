@@ -2,37 +2,50 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Table} from 'antd';
 import source from './sta.json';
+import styles from './index.less';
 
 source.resultList.splice(0, 100);
+//'Region','OrderLevel', 'ModeofTransportation','OrderQuantity', 'ProductCategory'
 
+let dims = ['OrderLevel',];
 
-let dims = ['OrderLevel', 'Region'];
-let cols = ['ModeofTransportation', 'ProductCategory'];
-let val = 'OrderQuantity';
+let cols = ['Region', 'ModeofTransportation', 'ProductCategory'];
+let val = [];
 let tcolumns = [];
 let tdata = [];
 
 let dimArr = [];
 let columnArr = [];
-dims.forEach((item, dimIndex) => {
-  tcolumns.push({
-    title: item,
-    dataIndex: item,
-    render: (text = {}) => ({
-      children: text.children || null,
-      props: {
-        rowSpan: text.count || 0,
-        colSpan: 1,
-      }
-    })
+
+if (dims.length > 0) {
+  dims.forEach((item) => {
+    tcolumns.push({
+      title: item,
+      dataIndex: item,
+      width: 100,
+      render: (text = {}) => ({
+        children: text.children || null,
+        props: {
+          rowSpan: text.count || 0,
+          colSpan: 1,
+        }
+      })
+    });
+    dimArr.push({});
   });
-  dimArr.push({});
-});
+} else if (val.length > 0) {
+  dimArr = [{
+    Value: {
+      children: [{}]
+    }
+  }];
+}
+
 cols.forEach(() => {
   columnArr.push({});
 });
 
-source.resultList.forEach(row => {
+source.resultList.forEach((row) => {
   let dimKey = dims.reduce((pre, elem, index) => {
     let name = row[elem];
     let key = index && name ? pre + '_' + name : name;
@@ -52,52 +65,54 @@ source.resultList.forEach(row => {
             }
           }
         ] : []
-        //key
       };
     }
 
     return index && name ? pre + '_' + name : name;
-  }, '');
+  }, 'Value');
   let colKey = cols.reduce((pre, elem, index) => {
     let name = row[elem];
     let key = index && name ? pre + '_' + name : name;
-    columnArr[index][key] = {
-      title: name,
-      parent: pre,
-      //key,
-      children: [],
-      dataIndex: 'value',
-      render: (text = {}) => text[key]
-    };
-    return key;
-  }, val);
 
-  let cat = dimArr[dims.length - 1][dimKey].children[0];
-  if (cat.value) {
-    cat.value[colKey] = row[val] || '';
-  } else {
-    cat.value = {
-      [colKey]: row[val] || ''
-    };
+    if (!columnArr[index][key]) {
+      let lastIndex = index === (columnArr.length - 1);
+      columnArr[index][key] = val.length > 1 ? {
+        title: name,
+        parent: pre,
+        width: 100,
+        children: lastIndex ? val.map(v => ({
+          title: v,
+          dataIndex: 'value',
+          render: (text = {}) => text[key + '_' + v]
+        })) : [],
+      } : {
+        title: name,
+        parent: pre,
+        children: [],
+        width: 100,
+        dataIndex: 'value',
+        render: (text = {}) => text[key]
+      };
+    }
+    return key;
+  }, 'Value');
+
+  if (val.length > 0) {
+    let cat = dimArr[dimArr.length - 1][dimKey].children[0];
+    val.forEach(v => {
+      if (cat.value) {
+        cat.value[val.length > 1 ? colKey + '_' + v : colKey] = row[v] || '';
+      } else {
+        cat.value = {
+          [val.length > 1 ? colKey + '_' + v : colKey]: row[v] || ''
+        };
+      }
+    });
+
   }
 });
 
-console.log('columnArr', columnArr);
-
-/*dimArr = dimArr.reverse();
-
-dimArr.forEach((item, index) => {
-
-  if (index >= dimArr.length - 1) return false;
-
-  Object.values(item).forEach(elem => {
-    if (dimArr[index + 1][elem.parent]) {
-      dimArr[index + 1][elem.parent].count += elem.count;
-      dimArr[index+1][elem.parent].children
-    }
-  });
-});*/
-
+console.log('columnArr', columnArr, dimArr);
 let popDim = (list) => {
   if (!(list instanceof Array)) return {};
   if (list.length > 1) {
@@ -122,22 +137,20 @@ let popDim = (list) => {
     let data = [];
     for (let key in list[0]) {
       let item = list[0][key];
-      Object.assign(item.children[0], {
+      Object.assign(item.children[0], item.column ? {
         [item.column]: {
           children: item.name,
           count: item.count
         }
-      });
+      } : null);
       data.push.apply(data, item.children);
     }
     return data;
   }
 };
 
-if (dims.length > 0) {
-  tdata = popDim(dimArr.reverse());
-  console.log('td', tdata);
-}
+tdata = popDim(dimArr.reverse());
+console.log('td', tdata);
 console.log('dimArr', dimArr);
 
 let popCategory = (list) => {
@@ -157,13 +170,22 @@ let popCategory = (list) => {
 if (cols.length > 0) {
   let colCategory = popCategory(columnArr.reverse());
   tcolumns.push({
-    title: cols.join(' > ') + ' : ' + val, children: colCategory
+    title: cols.join(' > '), children: colCategory
   });
-} else if (val) {
-  tcolumns.push({
-    title: val, dataIndex: 'value', render: (text) => text[val]
-  });
+} else if (val.length > 0) {
+  if (val.length > 1) {
+    val.forEach(v => {
+      tcolumns.push({
+        title: v, dataIndex: 'value', render: (text) => text['Value_' + v]
+      });
+    });
+  } else {
+    tcolumns.push({
+      title: val[0], dataIndex: 'value', render: (text) => text['Value']
+    });
+  }
 }
+
 
 console.log('tcolumns', tcolumns);
 
@@ -172,10 +194,12 @@ class CTable extends Component {
 
     return (
       <Table
+        className={styles.mtable}
         pagination={false}
         columns={tcolumns}
         dataSource={tdata}
         scroll={{
+          x: 'max-content',
           y: 400,
           scrollToFirstRowOnChange: true
         }}
