@@ -23,8 +23,8 @@ module.exports = {
     hot: true,
     compress: true,
     open: false,
-    contentBase: dist,
-    noInfo: false,
+    //contentBase: dist,
+    //noInfo: false,
     historyApiFallback: true
   },
   module: {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Table} from 'antd';
+import {Table,DatePicker} from 'antd';
 import source from './sta.json';
 import styles from './index.less';
 
@@ -232,6 +232,84 @@ class MTable extends Component {
           </h3>
         </div>
         <CTable/>
+        <div>
+          <DatePicker.RangePicker/>
+        </div>
+        <Table
+            pagination={true}
+            columns={[
+              {
+                title: 'A',
+                render: (text, record) => {
+                  return {
+                    children: Date.now(),
+                    props: {
+                      rowSpan: 3,
+                      colSpan: 1
+                    }
+                  };
+                }
+              },
+              {
+                title: 'B',
+                render: (text, record) => {
+                  return {
+                    children: Date.now(),
+                    props: {
+                      rowSpan: 3,
+                      colSpan: 1
+                    }
+                  };
+                }
+              },
+              {
+                title: 'V',
+                dataIndex: 'category',
+                children: [
+                  {
+                    title: 'V1',
+                    dataIndex: 'B',
+                    render: (text, record) => {
+                      console.log('B', text, record);
+                      return {
+                        children: Date.now(),
+                        props: {
+                          rowSpan: 3,
+                          colSpan: 1
+                        }
+                      };
+                    }
+                  },
+                  {
+                    title: 'V2',
+                    render: (text, record) => {
+                      return {
+                        children: Date.now(),
+                        props: {
+                          rowSpan: 3,
+                          colSpan: 1
+                        }
+                      };
+                    }
+                  }
+                ]
+              }
+            ]}
+            dataSource={[
+              {
+                category: [{A: {}}, {B: 2}],
+                value: []
+              },
+              {}
+            ]}
+            scroll={{
+              y: 400,
+              scrollToFirstRowOnChange: true
+            }}
+            bordered
+            size="small"
+            rowKey={() => 'row'}
+        />
       </div>
     );
   }

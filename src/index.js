@@ -9,9 +9,3 @@ ReactDom.render((
     <AppRouter/>
   </ConfigProvider>
 ), document.getElementById('root'));
-
-
-setTimeout(() => {
-  ReactDom.render(<AppRouter/>, document.getElementById('root'));
-}, 3000);
-
