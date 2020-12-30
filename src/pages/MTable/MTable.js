@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Table,DatePicker} from 'antd';
+import {Table} from 'antd';
 import source from './sta.json';
 import styles from './index.less';
 
@@ -232,9 +232,6 @@ class MTable extends Component {
           </h3>
         </div>
         <CTable/>
-        <div>
-          <DatePicker.RangePicker/>
-        </div>
         <Table
             pagination={true}
             columns={[
