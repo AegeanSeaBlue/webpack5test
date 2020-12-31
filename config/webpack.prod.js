@@ -142,7 +142,13 @@ module.exports = {
           name: 'antv',
           chunks: 'all',
           priority: 13,
-          test: /[\\/]node_modules[\\/](@antv|gl-matrix|tslib|detect-browser)/
+          test: /[\\/]node_modules[\\/](@antv|gl-matrix|detect-browser)/
+        },
+        echarts: {
+          name: 'echarts',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](echarts|zrender)/
         },
         mobx: {
           name: 'mobx',
