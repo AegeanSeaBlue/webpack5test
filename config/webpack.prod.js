@@ -4,6 +4,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const StatoscopeWebpackPlugin = require('@statoscope/ui-webpack');
 //const UselessFile = require('useless-files-webpack-plugin');
 //const PurifyCSSPlugin = require('purifycss-webpack');
 //const glob = require('glob');
@@ -36,6 +37,8 @@ let getPlugins = () => {
   ];
   if (ANA) {
     plugins.push(new BundleAnalyzerPlugin({openAnalyzer: true}));
+    plugins.push(new StatoscopeWebpackPlugin());
+
     /*plugins.push(new UselessFile(
       {
         root: '../src', // 项目目录
@@ -155,6 +158,12 @@ module.exports = {
           chunks: 'all',
           priority: 13,
           test: /[\\/]node_modules[\\/](mobx|mob-react)/
+        },
+        htmlToImage: {
+          name: 'htmlToImage',
+          chunks: 'all',
+          priority: 13,
+          test: /[\\/]node_modules[\\/](html-to-image)/
         },
         other: {
           name: 'other',

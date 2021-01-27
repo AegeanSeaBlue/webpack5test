@@ -11,7 +11,6 @@ class Home extends React.Component {
           <Link to='/'><span className={styles.font}>Webpack5</span></Link>
         </h2>
         <h3 className='home' style={{fontSize: 26}}>Home</h3>
-
         <h4>
           <Link to='/about?a=1' onClick={() => {
             //console.log('to about', this.props);
@@ -27,7 +26,6 @@ class Home extends React.Component {
             //console.log('to about', this.props);
           }}>To Line</Link>
         </h4>
-
       </>
     );
   }
